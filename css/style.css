@@ -1,21 +1,175 @@
+/*--Sección General--*/
+
+@import url('https://use.fontawesome.com/releases/v6.1.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.banner-fondo {
-    background-image: url('../img/pexels-pixabay-265125.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 1000px;
+/*--Sección TopBar--*/
+
+.top-bar {
+    align-items: center;
+    background-color: #000000;
+    display: flex;
+    font-size: 16px;
+    height: 40px;
+    justify-content: space-between;
+    width: 100%;
 }
+
+.top-bar span {
+    color: #ffffff;
+    padding-left: 100px;
+}
+
+.top-bar div {
+    padding-right: 100px;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.top-bar i {
+    padding-left: 5px;
+}
+
+/*--Sección NavBar--*/
 
 .nav-bar {
-    background-color: rgba(140, 140, 140, 0.5);
-    width: 800px;
-    
+    align-items: center;
+    background-color: #F0A83E;
+    display: flex;
+    font-size: 24px;
+    height: 100px;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.foto-personal {
-    width: 200px;
+.nav-bar img {
+    margin-left: 80px;
+    width: 300px;
+}
+
+.nav-bar nav {
+    margin-right: 80px;
+}
+
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.nav-bar i {
+    padding-right: 6px;
+}
+
+/*--Sección Banner--*/
+
+.banner-section {
+    background-image: url(/App/img/bowl-and-pet-daities-on-green-background\ 1.jpg);
+    height: 760px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px;
+}
+
+.main-text h1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #3C2313;
+    font-size: 56px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.main-text p {
+    font-size: 32px;
+    margin: 24px;
+}
+
+.main-text button {
+    background-color: #F0A83E;
+    padding: 24px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+/*--Sección Productos--*/
+
+.products-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-head img {
+    width: 100px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.products-head h2 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #3C2313; 
+}
+
+.products-head h3 {
+    font-size: 30px;
+    font-weight: 400;
+    word-spacing: 20px;
+    color: #666666;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.products-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFAF6;
+    padding-bottom: 12px;
+    margin: 24px;
+}
+
+.item img {
+    width: 480px;
+}
+
+.item p {
+    font-weight: 500;
+    font-size: 30px;
+    color: #3C2313;
+}
+
+.item .precio {
+    color: #F0A83E;
 }
