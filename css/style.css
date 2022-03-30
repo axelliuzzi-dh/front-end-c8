@@ -1,177 +1,132 @@
-/*--Sección General--*/
-
-@import url('https://use.fontawesome.com/releases/v6.1.0/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
     padding: 0;
-    max-width: 100%;
+    margin: 0;
     box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
-
-/*--Sección TopBar--*/
 
 .top-bar {
-    align-items: center;
-    background-color: #000000;
+    background-color: #1CD1B0;
+    height: 3rem;
+    width: 100vw;
     display: flex;
-    font-size: 16px;
-    height: 40px;
-    justify-content: space-between;
-    width: 100%;
+    align-items: center;
 }
 
-.top-bar span {
-    color: #ffffff;
-    padding-left: 100px;
-}
-
-.top-bar div {
-    padding-right: 100px;
-}
-
-.top-bar a {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 20px;
-}
-
-.top-bar i {
-    padding-left: 5px;
-}
-
-/*--Sección NavBar--*/
+.top-bar p {
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    }
 
 .nav-bar {
-    align-items: center;
-    background-color: #F0A83E;
+    background: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    height: 8rem;
+    width: 100vw;
     display: flex;
-    font-size: 24px;
-    height: 100px;
-    justify-content: space-between;
-    width: 100%;
+    align-items: center;
 }
 
-.nav-bar img {
-    margin-left: 80px;
-    width: 300px;
+.nav-bar h1 {
+    padding-left: 3rem;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
-.nav-bar nav {
-    margin-right: 80px;
+.contenedores {
+    margin: 10rem 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.nav-bar a {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 30px;
+.contenedor {
+    border-radius: 1rem;
+    width: 30vw;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nav-bar i {
-    padding-right: 6px;
-}
-
-/*--Sección Banner--*/
-
-.banner-section {
-    background-image: url('/img/bowl-and-pet-daities-on-green.jpg');
-    height: 760px;
+.fondo {
+    background-image: url(/img/fondoBatman.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    height: 45%;
+    width: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.main-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 24px;
+.fondo img {
+    position: relative;
+    top: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.main-text h1 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    color: #3C2313;
-    font-size: 56px;
+.fondo-h {
+    background-image: url(/img/fondoHerley.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45%;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.fondo-h img {
+    position: relative;
+    top: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text h2 {
+    padding-top: 20%;
+    text-align: center;
+    font-size: 2rem;
     font-weight: 400;
-    padding: 20px;
 }
 
-.main-text p {
-    font-size: 32px;
-    margin: 24px;
+.text p {
+    padding: 2rem;
 }
 
-.main-text button {
-    background-color: #F0A83E;
-    padding: 24px;
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #00669F;
     border: none;
-    border-radius: 10px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    height: 3rem;
+    width: 7rem;
 }
 
-/*--Sección Productos--*/
-
-.products-head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.products-head img {
-    width: 100px;
-    margin-top: 48px;
-    margin-bottom: 24px;
-}
-
-.products-head h2 {
-    font-size: 80px;
-    font-weight: 700;
-    color: #3C2313; 
-}
-
-.products-head h3 {
-    font-size: 30px;
-    font-weight: 400;
-    word-spacing: 20px;
-    color: #666666;
-    margin-top: 48px;
-    margin-bottom: 48px;
-}
-
-.products-items {
+footer {
+    background-color: #00669F;
+    height: 3rem;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FBFAF6;
-    padding-bottom: 12px;
-    margin: 24px;
+footer p {
+    font-size: 1rem;
+    color: #fff;
+    padding-left: 2rem;
 }
 
-.item img {
-    width: 480px;
-}
 
-.item p {
-    font-weight: 500;
-    font-size: 30px;
-    color: #3C2313;
-}
 
-.item .precio {
-    color: #F0A83E;
-}
+
