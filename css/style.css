@@ -1,132 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.top-bar {
-    background-color: #1CD1B0;
-    height: 3rem;
-    width: 100vw;
-    display: flex;
+/*-----Header-----*/
+
+header {
     align-items: center;
-}
-
-.top-bar p {
-    padding-left: 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    }
-
-.nav-bar {
-    background: #00669F;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
-    height: 8rem;
-    width: 100vw;
+    background-color: #202020;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 }
 
-.nav-bar h1 {
-    padding-left: 3rem;
-    font-size: 3rem;
-    font-weight: 400;
+.menu-nav a {
+    color: #F3F3F3;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    text-decoration: none;
 }
 
-.contenedores {
-    margin: 10rem 0;
+/*-----Main-----*/
+
+main {
+    background-color: #E5E5E5;;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
+    padding: 50px 30px;
 }
 
-.contenedor {
-    border-radius: 1rem;
-    width: 30vw;
-    height: 40rem;
+.envio {
+    border-radius: 10px;
+    padding-right: 5px;
+    position: relative;
+    width: 50vw;
+}
+
+.envio h2 {
+    color: #FC200C;    
+    font-size: 2.5rem;
+    left: 5%;
+    position: absolute;
+    top: 6%;
+}
+
+.envio span {
+    color: #fff;
+}
+
+.envio img {
+    width: 100%;
+}
+
+.podio {
+    background-color: #fff;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #f3f3f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    padding-left: 5px;
+    width: 50vw;
 }
 
-.fondo {
-    background-image: url(/img/fondoBatman.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45%;
-    width: 100vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.fondo img {
-    position: relative;
-    top: 20%;
-    border-radius: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.fondo-h {
-    background-image: url(/img/fondoHerley.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45%;
-    width: 100vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.fondo-h img {
-    position: relative;
-    top: 20%;
-    border-radius: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.text h2 {
-    padding-top: 20%;
+.podio h2 {
+    color: #FC200C;
+    font-size: 2.5rem;
+    padding: 5%;
     text-align: center;
-    font-size: 2rem;
-    font-weight: 400;
 }
 
-.text p {
-    padding: 2rem;
-}
-
-.button {
+.lista-img {
     display: flex;
-    justify-content: center;
+    height: 80%;
+    justify-content: space-around;
+    padding-bottom: 10%;
 }
 
-button {
-    background-color: #00669F;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #fff;
-    height: 3rem;
-    width: 7rem;
+.lista-img img {
+    height: 15rem;
+    width: 10rem;
+    margin: auto 0;
+}
+
+.listas {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin: auto 0;
+}
+
+.listas h3 {
+    padding: 1rem;
 }
 
 footer {
-    background-color: #00669F;
-    height: 3rem;
-    display: flex;
     align-items: center;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 }
 
-footer p {
-    font-size: 1rem;
-    color: #fff;
-    padding-left: 2rem;
+.footer-nav nav {
+    display: flex;
+    flex-direction: column;
 }
 
-
-
-
+.footer-nav a {
+    color: #F3F3F3;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
