@@ -1,64 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza&Front</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <div>
-            <img src="./img/Logo.svg" alt="Pizza&Front">
-        </div>
-        <div class="menu-nav">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Ranking</a>
-                <a href="#">Promoción</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-
-        <div class="envio">
-            <h2>Envio gratis <span>comprando</span> 2 pizzas</h2>
-            <img src="./img/delivery.jpg" alt="Delivery">
-        </div>
-
-        <div class="podio">
-            <h2>Podio de pizzas</h2>
-            <div class="lista-img">
-                <div class="listas">
-                    <h3>Pizzas top 5</h3>
-                    <ol>
-                        <li>Muzzarella</li>
-                        <li>Hawaiana</li>
-                        <li>Muzzarella J&Morron</li>
-                        <li>Fugazzeta</li>
-                        <li>Calabresa</li>
-                    </ol>
-                </div>
-                <img src="./img/PizzaFalling.jpg" alt="Pizza Falling">
+        <!-- Barra superior -->
+        <section class="top-bar">
+            <span>Grandes ofertas en comederos</span>
+            <div>
+                <a href="#">Español<i class="fa-solid fa-xs fa-chevron-down"></i></a>
+                <a href="#">ARG$<i class="fa-solid fa-xs fa-chevron-down"></i></a>
             </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-nav">
+        </section>
+        <!-- Barra de menú principal -->
+        <section class="nav-bar">
+            <img src="img/Logo.svg" alt="Aca va el logo">
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Contacto</a>
-                <a href="#">Ranking</a>
-                <a href="#">Promoción</a>
+                <a href="#"><i class="fas fa-paw"></i>Categorias</a>
+                <a href="#"><i class="fas fa-paw"></i>Pets</a>
+                <a href="#"><i class="fas fa-paw"></i>Nosotros</a>
+                <a href="#"><i class="fas fa-paw"></i>Contactanos</a>
             </nav>
-        </div>
-        <div>
-            <img src="./img/Logo.svg" alt="Pizza&Front">
-        </div>
-    </footer>
+        </section>
+    </header>
+    <main>
+        <!-- Sección banner -->
+        <section class="banner-section">
+            <div class="main-text">
+                <h1>¡Es un placer tenerte aquí!</h1>
+                <p>¡Comederos en descuento!</p>
+                <button>comederos</button>    
+            </div>
+        </section>
+        <!-- Sección productos -->
+        <section>
+            <div class="products-head">
+                <img src="img/pawprint 1.svg" alt="Imagen patita">
+                <h2>Productos Destacados</h2>
+                <h3>Comederos - Accesorios - Comida</h3>    
+            </div>
+            <div class="products-items">
+                <article class="item">
+                    <img src="img/churrasquito.jpg" alt="Imagen Churrasquito">
+                    <p>Juguete Churrasquito</p>
+                    <p class="precio">$150</p>
+                </article>
+                <article class="item">
+                    <img src="img/comedero.jpg" alt="Imagen Comedero">
+                    <p>Comedero para perro</p>
+                    <p class="precio">$250</p>
+                </article>
+                <article class="item">
+                    <img src="img/Huesito.jpg" alt="Imagen Huesito">
+                    <p>Juguete Huesito</p>
+                    <p class="precio">$650</p>
+                </article>    
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
